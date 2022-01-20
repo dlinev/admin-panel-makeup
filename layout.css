@@ -17,7 +17,7 @@
   .title {
     padding: 0;
   }
-  .title__header {
+  .header__title {
     margin-bottom: 2rem;
   }
   .title__text {
@@ -27,12 +27,14 @@
     font-size: 26px;
   }
   .filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+  }
+  .header__filter{
     margin-bottom: 2rem;
     padding: 0.5rem;
     border: 2px solid var(--background-color-light);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
   .filter__search {
     display: flex;
