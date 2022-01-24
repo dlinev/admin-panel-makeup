@@ -1,0 +1,20 @@
+{
+  "name": "lesson-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "run-prettier"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "2.5.1"
+  },
+  "run-prettier": {
+    "*.{js, jsx}": [
+      "prettier --write .",
+      "git add ."
+    ]
+  }
+}
