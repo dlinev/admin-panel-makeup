@@ -2,18 +2,27 @@
   "name": "lesson-2",
   "version": "1.0.0",
   "description": "",
-  "scripts": {
-    "precommit": "run-prettier"
-  },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "prettier": "2.5.1"
+  
+  "scripts": {
+    "prettier": "prettier --write src/**/*.{js,css,html}"
   },
-  "run-prettier": {
-    "*.{js, jsx, html}": [
-      "prettier --write",
-      "git add"
-    ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "src/**/*.{js,css,html}": [
+        "prettier --write",
+        "git add"
+      ]
+    }
+  },
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "prettier": "2.5.1"
   }
 }
