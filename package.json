@@ -4,21 +4,12 @@
   "description": "",
   "author": "",
   "license": "ISC",
-  
   "scripts": {
-    "prettier": "prettier --write src/**/*.{js,css,html}"
+    "prettier": "prettier --write ."
   },
   "husky": {
     "hooks": {
       "pre-commit": "npm run prettier"
-    }
-  },
-  "lint-staged": {
-    "linters": {
-      "src/**/*.{js,css,html}": [
-        "prettier --write",
-        "git add"
-      ]
     }
   },
   "devDependencies": {
