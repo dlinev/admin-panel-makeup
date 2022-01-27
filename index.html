@@ -8,18 +8,21 @@
     <link rel="stylesheet" href="./blocks/input.css" />
     <title>Input</title>
 </head>
+
 <body>
+
+    
     <div class="frame">
     <div class="input">
-        <div class="input__label">Дата и время заказа</div>
+        <div class="input__label" onclick="setFocus(1)">Дата и время заказа</div>
         <div class="input-block">
-            <input class="input-block__item" type="text" placeholder="Введите"></input>
+            <input class="input-block__item" id="block-1" type="text" placeholder="Введите"></input>
         </div>
     </div>   
     <div class="input">
-        <div class="input__label">Дата и время заказа</div>
+        <div class="input__label" onclick="setFocus(2)">Дата и время заказа</div>
         <div class="input-block">
-            <input class="input-block__item input-block__item-error" type="datetime" placeholder="Введите" value="06.12.2021"></input>
+            <input class="input-block__item input-block__item-error" id="block-2" type="datetime" placeholder="Введите" value="06.12.2021"></input>
             <a class="input-block__ref" href="#">
                 <svg class="input-block__img" viewBox="0 0 16 16" fill="none" stroke="#BAD8F5">
                     <path   d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5" 
@@ -29,9 +32,9 @@
         </div>
     </div>   
     <div class="input">
-        <div class="input__label">Дата и время заказа</div>
+        <div class="input__label" onclick="setFocus(3)">Дата и время заказа</div>
         <div class="input-block">
-        <input class="input-block__item input-block__item-lock" type="datetime" placeholder="Введите" value="06.12.2021"></input>
+        <input class="input-block__item input-block__item-lock" id="block-3" type="datetime" placeholder="Введите" value="06.12.2021"></input>
         <a class="input-block__ref" href="#">
             <svg class="input-block__img" viewBox="0 0 16 16" fill="#000" stroke="none">                 
                 <path   fill-rule="evenodd" 
@@ -48,5 +51,12 @@
         </div>
 </div>   
 </div>
+
+<script>
+    function setFocus(num) {
+        document.getElementById('block-'+num).focus();
+    }
+  </script>>
+
 </body>
 </html>
