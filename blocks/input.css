@@ -60,9 +60,9 @@
 .input-block__item::placeholder {
   color: var(--input-color-placeholder);
 }
-.input-block__item-error {
+.input-block__item_error {
   border: 1px solid var(--input-color-border-error);
 }
-.input-block__item-lock {
+.input-block__item_lock {
   background-color: var(--input-background-color-lock);
 }
