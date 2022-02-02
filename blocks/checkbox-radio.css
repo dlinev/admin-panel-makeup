@@ -1,4 +1,28 @@
-.frame_checkbok-radio {
-  height: 200px;
-  width: 200px;
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.frame_checkbox-radio {
+  height: 64px;
+  width: 104px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkbox {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 1px solid #bad8f5;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+.checkbox_empty {
+  left: 24px;
+}
+.checkbox_checked {
+  right: 24px;
 }
