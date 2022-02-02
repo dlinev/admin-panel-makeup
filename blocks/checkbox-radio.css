@@ -19,10 +19,44 @@
   border: 1px solid #bad8f5;
   box-sizing: border-box;
   border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .checkbox_empty {
   left: 24px;
 }
 .checkbox_checked {
   right: 24px;
+  background: #459df5;
+  border: 0;
+}
+.checkbox__img {
+  position: absolute;
+  width: 11.5px;
+  height: 12px;
+}
+.radiobutton {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 1px solid #bad8f5;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+.radiobutton_empty {
+  left: 24px;
+}
+.radiobutton_checked {
+  right: 24px;
+  border-radius: 15px;
+  background: #459df5;
+  border: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.radiobutton__img {
+  position: absolute;
 }

@@ -4,21 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./blocks/checkbox-radio.css" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="./checkbox-radio.css" />
     <title>Search-bar</title>
   </head>
 
   <body>
     <div class="wrapper">
       <div class="frame frame_checkbox-radio">
-        <input class="checkbox checkbox_empty" type="checkbox" />
-        <input class="checkbox checkbox_checked" type="checkbox" checked />
+        <p class="checkbox checkbox_empty"></p>
+        <p class="checkbox checkbox_checked">
+          <svg
+            class="checkbox__img"
+            viewBox="0 0 16 16"
+            fill="#FFF"
+            stroke="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
+              stroke="none"
+            />
+          </svg>
+        </p>
       </div>
 
       <div class="frame frame_checkbox-radio">
-        <div class="radiobutton"></div>
+        <p class="radiobutton radiobutton_empty"></p>
+        <p class="radiobutton radiobutton_checked">
+          <svg
+            class="radiobutton__img"
+            viewBox="0 0 16 16"
+            fill="#FFF"
+            stroke="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="8" cy="8" r="4" stroke="none" />
+          </svg>
+        </p>
       </div>
     </div>
   </body>
