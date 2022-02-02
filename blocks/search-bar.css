@@ -26,7 +26,7 @@
   color: var(--input-color-font-default);
   line-height: 1rem;
   position: static;
-  padding: 0 0 0 2rem;
+  padding: 0 0.5rem 0 2rem;
 }
 /* Remove outline on the forms and links
 .search-bar__input:active, :hover, :focus {
