@@ -37,18 +37,23 @@
   height: 12px;
 }
 .radiobutton {
+  width: 1rem;
+  height: 1rem;
+  appearance: none;
+  border-radius: 50%;
+  transition: 0.2s all linear;
   position: absolute;
-  width: 16px;
-  height: 16px;
-  background: #ffffff;
-  border: 1px solid #bad8f5;
-  box-sizing: border-box;
-  border-radius: 16px;
+}
+.radiobutton:checked {
+  border: 4px solid #459df5;
+}
+.radiobutton:not(:checked) {
+  border: 1px solid #459df5;
 }
 .radiobutton_empty {
   left: 24px;
 }
-.radiobutton_checked {
+.radiobutton_checked_old {
   right: 24px;
   border-radius: 15px;
   background: #459df5;
@@ -56,6 +61,9 @@
   display: flex;
   align-items: center;
   align-content: center;
+}
+.radiobutton_checked {
+  right: 24px;
 }
 .radiobutton__img {
   position: absolute;

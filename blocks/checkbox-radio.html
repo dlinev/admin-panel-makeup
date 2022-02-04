@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="../styles/reset.css" />
     <link rel="stylesheet" href="../styles/index.css" />
     <link rel="stylesheet" href="./checkbox-radio.css" />
-    <title>Search-bar</title>
+    <title>Checkbox-radio</title>
   </head>
 
   <body>
     <div class="wrapper">
       <div class="frame frame_checkbox-radio">
-        <p class="checkbox checkbox_empty"></p>
-        <p class="checkbox checkbox_checked">
+        <input class="checkbox checkbox_empty" type="checkbox"></input>
+        <input class="checkbox checkbox_checked" type="checkbox" checked>
           <svg
             class="checkbox__img"
             viewBox="0 0 16 16"
@@ -27,22 +27,12 @@
               stroke="none"
             />
           </svg>
-        </p>
+        </input>
       </div>
 
       <div class="frame frame_checkbox-radio">
-        <p class="radiobutton radiobutton_empty"></p>
-        <p class="radiobutton radiobutton_checked">
-          <svg
-            class="radiobutton__img"
-            viewBox="0 0 16 16"
-            fill="#FFF"
-            stroke="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="8" cy="8" r="4" stroke="none" />
-          </svg>
-        </p>
+          <input class="radiobutton radiobutton_empty" type="radio" name="radio-dz" value="radio1"></input>
+          <input class="radiobutton radiobutton_checked" type="radio" name="radio-dz" checked value="radio2"></input>
       </div>
     </div>
   </body>
