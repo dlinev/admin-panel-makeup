@@ -13,58 +13,91 @@
 }
 .checkbox {
   position: absolute;
-  width: 16px;
-  height: 16px;
-  background: #ffffff;
-  border: 1px solid #bad8f5;
-  box-sizing: border-box;
-  border-radius: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .checkbox_empty {
   left: 24px;
 }
 .checkbox_checked {
   right: 24px;
-  background: #459df5;
-  border: 0;
 }
-.checkbox__img {
+/* для элемента label, связанного с .custom-checkbox */
+.custom-checkbox {
   position: absolute;
-  width: 11.5px;
-  height: 12px;
+  z-index: -1;
+  opacity: 0;
 }
-.radiobutton {
-  width: 1rem;
-  height: 1rem;
-  appearance: none;
-  border-radius: 50%;
-  transition: 0.2s all linear;
-  position: absolute;
+/* для элемента label, связанного с .custom-checkbox */
+.custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
 }
-.radiobutton:checked {
-  border: 4px solid #459df5;
-}
-.radiobutton:not(:checked) {
+/* создание в label псевдоэлемента before со следующими стилями */
+.custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
   border: 1px solid #459df5;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 16px 16px;
 }
-.radiobutton_empty {
+/* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox:checked + label::before {
+  border-color: #459df5;
+  background-color: #459df5;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23FFF' stroke='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z' stroke='none'/%3E%3C/svg%3E");
+}
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #b3d7ff;
+}
+
+.radio {
+  position: absolute;
+}
+.radio_empty {
   left: 24px;
 }
-.radiobutton_checked_old {
-  right: 24px;
-  border-radius: 15px;
-  background: #459df5;
-  border: 0;
-  display: flex;
-  align-items: center;
-  align-content: center;
-}
-.radiobutton_checked {
+.radio_checked {
   right: 24px;
 }
-.radiobutton__img {
+/* для элемента input c type="radio" */
+.custom-radio {
   position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+/* для элемента label связанного с .custom-radio */
+.custom-radio + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+/* создание в label псевдоэлемента  before */
+.custom-radio + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #459df5;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* стили при наведении курсора на радио */
+.custom-radio:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #b3d7ff;
+}
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio:checked + label::before {
+  border-color: #459df5;
+  background-color: #459df5;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23FFF' stroke='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='4' stroke='none'/%3E%3C/svg%3E");
 }

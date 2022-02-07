@@ -13,27 +13,26 @@
   <body>
     <div class="wrapper">
       <div class="frame frame_checkbox-radio">
-        <input class="checkbox checkbox_empty" type="checkbox"></input>
-        <input class="checkbox checkbox_checked" type="checkbox" checked>
-          <svg
-            class="checkbox__img"
-            viewBox="0 0 16 16"
-            fill="#FFF"
-            stroke="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
-              stroke="none"
-            />
-          </svg>
-        </input>
+        <div class="checkbox checkbox_empty">
+          <input class="custom-checkbox" type="checkbox" id="checkbox-1"/>
+          <label for="checkbox-1"></label>
+        </div>
+        <div class="checkbox checkbox_checked">
+          <input class="custom-checkbox" type="checkbox" id="checkbox-2" checked/>
+          <label for="checkbox-2"></label>
+        </div>  
       </div>
 
       <div class="frame frame_checkbox-radio">
-          <input class="radiobutton radiobutton_empty" type="radio" name="radio-dz" value="radio1"></input>
-          <input class="radiobutton radiobutton_checked" type="radio" name="radio-dz" checked value="radio2"></input>
-      </div>
+        <div class="radio radio_empty">
+          <input class="custom-radio custom-radio_empty" id="radio-1" type="radio" name="radio-group" value="radio1"></input>
+          <label for="radio-1"></label>
+        </div>  
+          <div class="radio radio_checked">
+            <input class="custom-radio custom-radio_checked" id="radio-2" type="radio" name="radio-group" checked value="radio2"></input>
+            <label for="radio-2"></label>
+          </div>  
+        </div>
     </div>
   </body>
 </html>
