@@ -1,14 +1,21 @@
 :root {
   --frame-color-border-default: #8055ff;
+  --background-color-default: #459df5;
   --input-color-font-default: #000;
   --input-color-border-default: #459df5;
   --input-color-border-error: #f53152;
   --input-color-placeholder: #bad8f5;
   --input-background-color-lock: #bad8f5;
   --input-color-image-default: #459df5;
+  --button-font-color-white: #fff;
+  --button-font-color-black: #000;
+  --button-shadow-light: #bad8f5;
+  --button-shadow-dark: rgba(0, 0, 0, 0.2);
 }
+
 .body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
 }
 .frame {
   width: 352px;

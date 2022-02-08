@@ -1,0 +1,75 @@
+.frame__button {
+  width: 600px;
+  flex-direction: inherit;
+}
+.button__column {
+  /* чот не пригодилось*/
+}
+.button__items {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.button__item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  border-radius: 4px;
+  color: var(--button-font-color-white);
+  margin-bottom: 1rem;
+}
+.button__item:hover {
+  box-shadow: 0px 2px 5px 2px var(--button-shadow-light);
+}
+.button__img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.button__text {
+  font-size: 13px;
+  display: block;
+  padding-left: 0.25rem;
+}
+.button__item_fill {
+  background-color: var(--background-color-default);
+}
+.button__item_fill-big {
+  padding: 0.5rem 1.25rem 0.5rem 1rem;
+  color: var(--button-font-color-white);
+}
+.button__item_fill-big-img {
+  padding: 0.5rem;
+}
+.button__item_fill-small {
+  padding: 0.25rem 0.8rem 0.25rem 0.5rem;
+  color: var(--button-font-color-white);
+}
+.button__item_fill-small-img {
+  padding: 0.25rem;
+}
+
+.button__item_transparent-big {
+  padding: 0.5rem 1.25rem 0.5rem 1rem;
+  color: var(--background-color-default);
+}
+.button__item_transparent-big-img {
+  padding: 0.5rem;
+}
+.button__item_transparent-small {
+  padding: 0.25rem 0.8rem 0.25rem 0.5rem;
+  color: var(--background-color-default);
+}
+.button__item_transparent-small-img {
+  padding: 0.25rem;
+}
+.button__item_transparent-big-black {
+  padding: 0.5rem 1.25rem 0.5rem 1rem;
+  color: var(--button-font-color-black);
+}
+.button__item_transparent-big-black:hover {
+  box-shadow: 0px 2px 5px 2px var(--button-shadow-dark);
+}
