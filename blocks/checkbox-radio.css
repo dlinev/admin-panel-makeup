@@ -40,8 +40,8 @@
   height: 1em;
   flex-shrink: 0;
   flex-grow: 0;
-  border: 1px solid #459df5;
-  border-radius: 4px;
+  border: 1px solid #bad8f5;
+  border-radius: 2px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 16px 16px;
@@ -54,7 +54,7 @@
 }
 /* стили при наведении курсора на checkbox */
 .custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
-  border-color: #b3d7ff;
+  border-color: #459df5;
 }
 
 .radio {
@@ -82,18 +82,18 @@
 .custom-radio + label::before {
   content: "";
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 1rem;
+  height: 1rem;
   flex-shrink: 0;
   flex-grow: 0;
-  border: 1px solid #459df5;
+  border: 1px solid #bad8f5;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center center;
 }
 /* стили при наведении курсора на радио */
 .custom-radio:not(:disabled):not(:checked) + label:hover::before {
-  border-color: #b3d7ff;
+  border-color: #459df5;
 }
 /* стили для радиокнопки, находящейся в состоянии checked */
 .custom-radio:checked + label::before {
