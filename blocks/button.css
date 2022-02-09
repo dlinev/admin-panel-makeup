@@ -2,9 +2,6 @@
   width: 600px;
   flex-direction: inherit;
 }
-.button__column {
-  /* чот не пригодилось*/
-}
 .button__items {
   width: 150px;
   display: flex;
@@ -22,54 +19,74 @@
   color: var(--button-font-color-white);
   margin-bottom: 1rem;
 }
-.button__item:hover {
-  box-shadow: 0px 2px 5px 2px var(--button-shadow-light);
-}
 .button__img {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 12px;
+  height: 12px;
 }
 .button__text {
   font-size: 13px;
   display: block;
-  padding-left: 0.25rem;
+  white-space: nowrap;
 }
-.button__item_fill {
-  background-color: var(--background-color-default);
+.button_long {
+  width: 112px;
+  padding-left: 18px;
 }
-.button__item_fill-big {
-  padding: 0.5rem 1.25rem 0.5rem 1rem;
-  color: var(--button-font-color-white);
+.button_middle {
+  width: 88px;
+  padding-left: 16px;
 }
-.button__item_fill-big-img {
-  padding: 0.5rem;
+.button_short {
+  width: 32px;
+  padding-left: 10px;
 }
-.button__item_fill-small {
-  padding: 0.25rem 0.8rem 0.25rem 0.5rem;
-  color: var(--button-font-color-white);
+.button_big_text {
+  padding-left: 10px;
 }
-.button__item_fill-small-img {
-  padding: 0.25rem;
+.button_small_text {
+  padding-left: 6px;
+}
+.button_small_long {
+  width: 92px;
+  padding-left: 10px;
+}
+.button_small_middle {
+  width: 72px;
+  padding-left: 8px;
+}
+.button_small_short {
+  width: 24px;
+  padding-left: 6px;
 }
 
-.button__item_transparent-big {
-  padding: 0.5rem 1.25rem 0.5rem 1rem;
+.button_fill {
+  background-color: var(--background-color-default);
+  color: var(--button-font-color-white);
+}
+.button_big {
+  height: 32px;
+}
+.button_small {
+  height: 24px;
+}
+.qbutton_img {
+  padding-left: 10px;
+}
+.qbutton_small_img {
+  padding-left: 6px;
+}
+.button_transparent {
   color: var(--background-color-default);
 }
-.button__item_transparent-big-img {
-  padding: 0.5rem;
-}
-.button__item_transparent-small {
-  padding: 0.25rem 0.8rem 0.25rem 0.5rem;
-  color: var(--background-color-default);
-}
-.button__item_transparent-small-img {
-  padding: 0.25rem;
-}
-.button__item_transparent-big-black {
-  padding: 0.5rem 1.25rem 0.5rem 1rem;
+.button_black {
   color: var(--button-font-color-black);
 }
-.button__item_transparent-big-black:hover {
+
+/* прощай красота
+.button__item:hover {
+  box-shadow: 0px 2px 5px 2px var(--button-shadow-light);
+}
+.button_black:hover {
   box-shadow: 0px 2px 5px 2px var(--button-shadow-dark);
 }
+*/
