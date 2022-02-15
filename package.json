@@ -26,9 +26,9 @@
     }
   },
   "homepage": "https://github.com/dlinev/admin-panel-makeup#readme",
-  "dependencies": {
+  "devDependencies": {
     "husky": "^7.0.4",
-    "pre-commit": "^1.2.2",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "pre-commit": "^1.2.2"
   }
 }
