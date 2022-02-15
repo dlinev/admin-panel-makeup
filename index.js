@@ -11,12 +11,17 @@ function someName() {
   }
 }
 
-const userName = prompt("Ввведите имя");
-const userEmail = prompt("Ввведите почту");
+            const userName = prompt("Ввведите имя");
+const       userEmail = prompt("Ввведите почту");
+
+
+
+
+
 const userPassword = prompt("Ввведите пароль");
 
 alert(`
-    name: ${userName}, email: ${userEmail}, password: ${userPassword}
+name: ${userName}, email: ${userEmail}, password: ${userPassword}
 `);
 
 if (age === 20) {
