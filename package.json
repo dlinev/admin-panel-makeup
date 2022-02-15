@@ -22,6 +22,11 @@
     ],
     "*.{js,css,md}": "prettier --write"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "homepage": "https://github.com/dlinev/admin-panel-makeup#readme",
   "devDependencies": {
     "husky": "^7.0.4",
