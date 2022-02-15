@@ -14,13 +14,11 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,json,css,scss,md,html,htm}": [
       "prettier -w"
-    ],
-    "*.{js,css,md}": "prettier --write"
+    ]
   },
   "husky": {
     "hooks": {
