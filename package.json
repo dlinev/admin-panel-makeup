@@ -1,19 +1,34 @@
 {
-  "name": "lesson-2",
+  "name": "admin-panel-makeup",
   "version": "1.0.0",
-  "description": "",
-  "author": "",
+  "description": "Admin-panel-makeup",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlinev/admin-panel-makeup.git"
+  },
+  "author": "Dmitry Linev",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dlinev/admin-panel-makeup/issues"
+  },
   "scripts": {
-    "prettier": "prettier --write ."
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,scss,md,html,htm}": [
+      "prettier -w"
+    ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run prettier"
+      "pre-commit": "lint-staged"
     }
   },
+  "homepage": "https://github.com/dlinev/admin-panel-makeup#readme",
   "devDependencies": {
     "husky": "^7.0.4",
-    "prettier": "2.5.1"
+    "prettier": "^2.5.1",
+    "pre-commit": "^1.2.2"
   }
 }
