@@ -12,13 +12,7 @@
   align-items: center;
 }
 .checkbox {
-  position: absolute;
-}
-.checkbox_empty {
-  left: 24px;
-}
-.checkbox_checked {
-  right: 24px;
+  display: flex;
 }
 /* для элемента label, связанного с .custom-checkbox */
 .custom-checkbox {
@@ -31,6 +25,7 @@
   display: inline-flex;
   align-items: center;
   user-select: none;
+  padding: 12px;
 }
 /* создание в label псевдоэлемента before со следующими стилями */
 .custom-checkbox + label::before {
@@ -58,13 +53,7 @@
 }
 
 .radio {
-  position: absolute;
-}
-.radio_empty {
-  left: 24px;
-}
-.radio_checked {
-  right: 24px;
+  display: flex;
 }
 /* для элемента input c type="radio" */
 .custom-radio {
@@ -77,6 +66,7 @@
   display: inline-flex;
   align-items: center;
   user-select: none;
+  padding: 12px;
 }
 /* создание в label псевдоэлемента  before */
 .custom-radio + label::before {
