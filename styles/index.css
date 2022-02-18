@@ -1,0 +1,24 @@
+:root {
+  --frame-color-border-default: #8055ff;
+  --input-color-font-default: #000;
+  --input-color-border-default: #459df5;
+  --input-color-border-error: #f53152;
+  --input-color-placeholder: #bad8f5;
+  --input-background-color-lock: #bad8f5;
+  --input-color-image-default: #459df5;
+}
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.frame {
+  width: 352px;
+  height: 400px;
+  margin: 0 auto;
+  border: 1px dashed var(--frame-color-border-default);
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
