@@ -1,0 +1,32 @@
+{
+  "name": "admin-panel-makeup",
+  "version": "1.0.0",
+  "description": "Admin-panel-makeup",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlinev/admin-panel-makeup.git"
+  },
+  "author": "Dmitry Linev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dlinev/admin-panel-makeup/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,scss,md,html,htm}": [
+      "prettier -w"
+    ],
+    "*.{js,css,md}": "prettier --write"
+  },
+  "homepage": "https://github.com/dlinev/admin-panel-makeup#readme",
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.4",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.5.1"
+  }
+}
