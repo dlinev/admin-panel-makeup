@@ -1,13 +1,21 @@
 .frame__button {
   width: 600px;
   flex-direction: inherit;
+  padding: 48px;
 }
-.button__items {
+.button {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+}
+.button-block {
   width: 150px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
+  padding-bottom: 40px;
 }
 .button__item {
   display: flex;
@@ -16,6 +24,7 @@
   border: none;
   background-color: transparent;
   border-radius: 4px;
+  margin-bottom: 16px;
 }
 .button__img {
   width: 16px;
@@ -51,29 +60,15 @@
 .button_size_big .button__img + .button__text {
   margin-left: 8px;
 }
+.button_size_big + .button_size_icon_only {
+  padding: 8px;
+}
 .button_size_small {
   padding: 4px 8px;
 }
 .button_size_small .button__img + .button__text {
   margin-left: 6px;
 }
-.button_size_big + .button_size_icon_only {
-  padding: 8px;
-}
 .button_size_small + .button_size_icon_only {
   padding: 4px;
 }
-.button_space_bottom {
-  margin-bottom: 16px;
-}
-.button_items_space_bottom {
-  margin-bottom: 48px;
-}
-/* прощай красота
-.button__item:hover {
-  box-shadow: 0px 2px 5px 2px var(--button-shadow-light);
-}
-.button_black:hover {
-  box-shadow: 0px 2px 5px 2px var(--button-shadow-dark);
-}
-*/
