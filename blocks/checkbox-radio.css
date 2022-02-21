@@ -11,8 +11,14 @@
   justify-content: center;
   align-items: center;
 }
-.checkbox {
+.checkbox-block {
+  width: 64px;
   display: flex;
+  justify-content: space-around;
+}
+.checkbox {
+  width: 1rem;
+  height: 1rem;
 }
 /* для элемента label, связанного с .custom-checkbox */
 .custom-checkbox {
@@ -25,7 +31,6 @@
   display: inline-flex;
   align-items: center;
   user-select: none;
-  padding: 12px;
 }
 /* создание в label псевдоэлемента before со следующими стилями */
 .custom-checkbox + label::before {
@@ -52,8 +57,14 @@
   border-color: #459df5;
 }
 
-.radio {
+.radio-block {
+  width: 64px;
   display: flex;
+  justify-content: space-around;
+}
+.radio {
+  width: 1rem;
+  height: 1rem;
 }
 /* для элемента input c type="radio" */
 .custom-radio {
@@ -66,7 +77,6 @@
   display: inline-flex;
   align-items: center;
   user-select: none;
-  padding: 12px;
 }
 /* создание в label псевдоэлемента  before */
 .custom-radio + label::before {
@@ -87,6 +97,7 @@
 }
 /* стили для радиокнопки, находящейся в состоянии checked */
 .custom-radio:checked + label::before {
+  border-width: 0;
   border-color: #459df5;
   background-color: #459df5;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23FFF' stroke='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='4' stroke='none'/%3E%3C/svg%3E");
