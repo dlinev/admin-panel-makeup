@@ -1,6 +1,7 @@
 .frame__button {
   width: 600px;
   flex-direction: inherit;
+  padding: 48px;
 }
 .button {
   font-family: Ubuntu;
@@ -12,9 +13,9 @@
   width: 150px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
-  padding-bottom: 48px;
+  padding-bottom: 40px;
 }
 .button__item {
   display: flex;
@@ -23,6 +24,7 @@
   border: none;
   background-color: transparent;
   border-radius: 4px;
+  margin-bottom: 16px;
 }
 .button__img {
   width: 16px;
@@ -58,14 +60,14 @@
 .button_size_big .button__img + .button__text {
   margin-left: 8px;
 }
+.button_size_big + .button_size_icon_only {
+  padding: 8px;
+}
 .button_size_small {
   padding: 4px 8px;
 }
 .button_size_small .button__img + .button__text {
   margin-left: 6px;
-}
-.button_size_big + .button_size_icon_only {
-  padding: 8px;
 }
 .button_size_small + .button_size_icon_only {
   padding: 4px;
