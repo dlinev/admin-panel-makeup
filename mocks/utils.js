@@ -1,4 +1,10 @@
+const _STATUS = "Выполнен";
 const getOrderByStatus = (orders, valueStatus) =>
   orders.filter((order) => order.orderStatus === valueStatus);
 
-console.log(getOrderByStatus(ordersJson, "Выполнен"));
+alert(
+  'Записей со статусом "' +
+    _STATUS +
+    '" - ' +
+    getOrderByStatus(JSON.parse(ordersJson), _STATUS).length
+);
