@@ -1,7 +1,4 @@
-const getOrderByStatus = function (orders, valueStatus) {
-  return orders.filter((order) => {
-    return order.orderStatus === valueStatus;
-  });
-};
+const getOrderByStatus = (orders, valueStatus) =>
+  orders.filter((order) => order.orderStatus === valueStatus);
 
-console.log(getOrderByStatus(JSON.parse(ordersJson), "Выполнен"));
+console.log(getOrderByStatus(ordersJson, "Выполнен"));
