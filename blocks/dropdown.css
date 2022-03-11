@@ -27,7 +27,7 @@
   height: 6rem;
 }
 .dropdown {
-  margin-bottom: 1rem;
+  padding: 8px 0 8px 0;
 }
 .dropdown__label {
   display: flex;
@@ -67,7 +67,7 @@
 
 .dropdown__text {
   display: inline-block;
-  font-family: Ubuntu;
+  font-family: Ubuntu !important;
   font-size: 13px;
   line-height: 16px;
 }
@@ -76,16 +76,32 @@
   flex-direction: column;
 }
 .dropdown-radio__items {
-  margin-bottom: 1rem;
+  padding: 8px 0 8px 0;
   font-size: 13px;
   line-height: 16px;
 }
+.dropdown-radio__items:first-child {
+  padding: 0 0 8px 0;
+}
+.dropdown:last-child {
+  padding: 8px 0 0 0;
+}
+.dropdown:first-child {
+  padding: 0 0 8px 0;
+}
+.dropdown-radio__items:last-child {
+  padding: 8px 0 0 0;
+}
+
 .dropdown-radio__item {
   display: none;
 }
 .dropdown-radio__text {
   display: inline-block;
   cursor: pointer;
+  font-family: Ubuntu !important;
+  font-style: normal;
+  font-weight: 400;
 }
 .dropdown-radio__item:checked + .dropdown-radio__text {
   color: var(--radio-color-text);
@@ -97,6 +113,9 @@
 }
 .dropdown-input__text {
   margin-bottom: 0.5rem;
+  font-family: Ubuntu !important;
+  font-style: normal;
+  font-weight: 400;
 }
 .dropdown-input__item {
   width: 128px;
@@ -156,4 +175,7 @@
   font-size: 13px;
   display: block;
   padding-left: 0.25rem;
+  font-family: Ubuntu !important;
+  font-style: normal;
+  font-weight: 400;
 }
